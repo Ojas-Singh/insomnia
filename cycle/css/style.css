@@ -509,11 +509,11 @@ h1 {
   -o-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 50%;
-  -webkit-transform: rotate(-18deg);
-  -moz-transform: rotate(-18deg);
-  -o-transform: rotate(-18deg);
-  -ms-transform: rotate(-18deg);
-  transform: rotate(-18deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
 }
 
 .wheel-string-three {
@@ -522,11 +522,11 @@ h1 {
   -o-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 50%;
-  -webkit-transform: rotate(54deg);
-  -moz-transform: rotate(54deg);
-  -o-transform: rotate(54deg);
-  -ms-transform: rotate(54deg);
-  transform: rotate(54deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 .wheel-string-four {
@@ -535,11 +535,11 @@ h1 {
   -o-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 50%;
-  -webkit-transform: rotate(126deg);
-  -moz-transform: rotate(126deg);
-  -o-transform: rotate(126deg);
-  -ms-transform: rotate(126deg);
-  transform: rotate(126deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .wheel-string-five {
@@ -548,11 +548,24 @@ h1 {
   -o-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 50%;
-  -webkit-transform: rotate(198deg);
-  -moz-transform: rotate(126deg);
-  -o-transform: rotate(126deg);
-  -ms-transform: rotate(126deg);
-  transform: rotate(198deg);
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+.wheel-string-six {
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 50%;
+  -webkit-transform: rotate(-150deg);
+  -moz-transform: rotate(-150deg);
+  -o-transform: rotate(-150deg);
+  -ms-transform: rotate(-150deg);
+  transform: rotate(-150deg);
 }
 
 .wheel-wrapper {
