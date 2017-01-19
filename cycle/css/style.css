@@ -6,7 +6,7 @@ html {
   height: 100%;
   margin: 0;
   font: normal 100% Arial, Helvetica, sans-serif;
-  background-color: tomato;
+  background-color: #666666;
 }
 
 p {
@@ -36,7 +36,7 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #323840;
+  background-color: #ffffff;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,7 +111,7 @@ body:-ms-input-placeholder {
   width: 100%;
   height: 100%;
   padding-left: 5px;
-  background: rgba(39, 39, 39, 0.8);
+  background: rgba(39, 39, 39, 0.7);
 }
 
 .svgbox {
@@ -135,13 +135,13 @@ svg {
   top: 0;
   left: 0px;
   width: 40px;
-  height: 600px;
+  height: 720px;
 }
 
 .panelcurve {
   width: 40px;
-  height: 600px;
-  fill: rgba(39, 39, 39, 0.8);
+  height: 720px;
+  fill: rgba(39, 39, 39, 0.7);
 }
 
 h1 {
@@ -237,13 +237,12 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 100%;
   position: absolute;
-  top: 50%;
-  margin-top: -300px;
+  top: 0;
+  margin-top: 0;
   overflow: hidden;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+ 
 }
 
 .wrapper {
@@ -251,7 +250,7 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 720px;
   overflow: hidden;
 }
 
@@ -263,7 +262,7 @@ h1 {
 
 .container {
   margin: 0 auto;
-  height: 600px;
+  height: 100%;
   text-align: center;
 }
 
@@ -483,7 +482,7 @@ h1 {
 .wheel-string {
   z-index: -1;
   background-color: orange;
-  width: 200px;
+  width: 250px;
   height: 20px;
   position: absolute;
   top: 160px;
@@ -732,7 +731,6 @@ h1 {
 .wheel-wrapper .wheel.primary .wheel-icon,
 .wheel-wrapper .wheel.secondary .wheel-icon-inner {
   text-align: center;
-  font-weight: bold;
   cursor: default;
   -webkit-border-radius: 100%;
   -webkit-background-clip: padding-box;
@@ -745,17 +743,17 @@ h1 {
 }
 
 .wheel-wrapper .wheel.primary {
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  height: 120px;
 }
 
 .wheel-wrapper .wheel.primary .wheel-icon {
-  width: 180px;
-  height: 180px;
-  font-size: 16pt;
+  width: 120px;
+  height: 120px;
+  font-size: 20pt;
   color: #d6d6d6;
-  background-color: #aa73ff;
-  line-height: 180px;
+  background-color: #565656;
+  line-height: 120px;
 }
 
 .wheel-wrapper .wheel.secondary {
@@ -792,8 +790,8 @@ h1 {
 .wheel-wrapper .wheel.secondary .wheel-spoke,
 .wheel-wrapper .wheel.secondary .wheel-icon,
 .wheel-wrapper .wheel.secondary .wheel-icon-inner {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 
 .wheel-wrapper .wheel.secondary .wheel-spoke {
@@ -832,10 +830,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary .wheel-icon-inner {
-  font-size: 14pt;
+  font-size: 12pt;
   color: white;
-  background-color: #33b1f8;
-  line-height: 150px;
+  background-color: #a4b4c4;
+  line-height: 100px;
+  width:100px
 }
 
 .wheel-wrapper .wheel.secondary:hover,
@@ -855,7 +854,225 @@ h1 {
   -ms-animation-play-state: paused !important;
   animation-play-state: paused !important;
 }
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(9) {
+  display: block;
+  -webkit-transform: rotate(320deg) translate(-50%, -50%);
+  -moz-transform: rotate(320deg) translate(-50%, -50%);
+  -o-transform: rotate(320deg) translate(-50%, -50%);
+  -ms-transform: rotate(320deg) translate(-50%, -50%);
+  transform: rotate(320deg) translate(-50%, -50%);
+}
 
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(9) .wheel-icon {
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(9) .wheel-icon-inner {
+  -webkit-transform: rotate(-320deg);
+  -moz-transform: rotate(-320deg);
+  -o-transform: rotate(-320deg);
+  -ms-transform: rotate(-320deg);
+  transform: rotate(-320deg);
+}.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(8) {
+  display: block;
+  -webkit-transform: rotate(280deg) translate(-50%, -50%);
+  -moz-transform: rotate(280deg) translate(-50%, -50%);
+  -o-transform: rotate(280deg) translate(-50%, -50%);
+  -ms-transform: rotate(280deg) translate(-50%, -50%);
+  transform: rotate(280deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(8) .wheel-icon {
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(8) .wheel-icon-inner {
+  -webkit-transform: rotate(-280deg);
+  -moz-transform: rotate(-280deg);
+  -o-transform: rotate(-280deg);
+  -ms-transform: rotate(-280deg);
+  transform: rotate(-280deg);
+}.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(7) {
+  display: block;
+  -webkit-transform: rotate(240deg) translate(-50%, -50%);
+  -moz-transform: rotate(240deg) translate(-50%, -50%);
+  -o-transform: rotate(240deg) translate(-50%, -50%);
+  -ms-transform: rotate(240deg) translate(-50%, -50%);
+  transform: rotate(240deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(7) .wheel-icon {
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(7) .wheel-icon-inner {
+  -webkit-transform: rotate(-240deg);
+  -moz-transform: rotate(-240deg);
+  -o-transform: rotate(-240deg);
+  -ms-transform: rotate(-240deg);
+  transform: rotate(-240deg);
+}
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(6) {
+  display: block;
+  -webkit-transform: rotate(200deg) translate(-50%, -50%);
+  -moz-transform: rotate(200deg) translate(-50%, -50%);
+  -o-transform: rotate(200deg) translate(-50%, -50%);
+  -ms-transform: rotate(200deg) translate(-50%, -50%);
+  transform: rotate(200deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(6) .wheel-icon {
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(6) .wheel-icon-inner {
+  -webkit-transform: rotate(-200deg);
+  -moz-transform: rotate(-200deg);
+  -o-transform: rotate(-200deg);
+  -ms-transform: rotate(-200deg);
+  transform: rotate(-200deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(5) {
+  display: block;
+  -webkit-transform: rotate(160deg) translate(-50%, -50%);
+  -moz-transform: rotate(160deg) translate(-50%, -50%);
+  -o-transform: rotate(160deg) translate(-50%, -50%);
+  -ms-transform: rotate(160deg) translate(-50%, -50%);
+  transform: rotate(160deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(5) .wheel-icon {
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(5) .wheel-icon-inner {
+  -webkit-transform: rotate(-160deg);
+  -moz-transform: rotate(-160deg);
+  -o-transform: rotate(-160deg);
+  -ms-transform: rotate(-160deg);
+  transform: rotate(-160deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(4) {
+  display: block;
+  -webkit-transform: rotate(120deg) translate(-50%, -50%);
+  -moz-transform: rotate(120deg) translate(-50%, -50%);
+  -o-transform: rotate(120deg) translate(-50%, -50%);
+  -ms-transform: rotate(120deg) translate(-50%, -50%);
+  transform: rotate(120deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(4) .wheel-icon {
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(4) .wheel-icon-inner {
+  -webkit-transform: rotate(-120deg);
+  -moz-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  -ms-transform: rotate(-120deg);
+  transform: rotate(-120deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(3) {
+  display: block;
+  -webkit-transform: rotate(80deg) translate(-50%, -50%);
+  -moz-transform: rotate(80deg) translate(-50%, -50%);
+  -o-transform: rotate(80deg) translate(-50%, -50%);
+  -ms-transform: rotate(80deg) translate(-50%, -50%);
+  transform: rotate(80deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(3) .wheel-icon {
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(3) .wheel-icon-inner {
+  -webkit-transform: rotate(-80deg);
+  -moz-transform: rotate(-80deg);
+  -o-transform: rotate(-80deg);
+  -ms-transform: rotate(-80deg);
+  transform: rotate(-80deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(2) {
+  display: block;
+  -webkit-transform: rotate(40deg) translate(-50%, -50%);
+  -moz-transform: rotate(40deg) translate(-50%, -50%);
+  -o-transform: rotate(40deg) translate(-50%, -50%);
+  -ms-transform: rotate(40deg) translate(-50%, -50%);
+  transform: rotate(40deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(2) .wheel-icon {
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(2) .wheel-icon-inner {
+  -webkit-transform: rotate(-40deg);
+  -moz-transform: rotate(-40deg);
+  -o-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(1) {
+  display: block;
+  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+  -moz-transform: rotate(0deg) translate(-50%, -50%);
+  -o-transform: rotate(0deg) translate(-50%, -50%);
+  -ms-transform: rotate(0deg) translate(-50%, -50%);
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(1) .wheel-icon {
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
+}
+
+.wheel-wrapper .wheel.secondary.spokes-9 .wheel-spoke:nth-child(1) .wheel-icon-inner {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(6) {
   display: block;
   -webkit-transform: rotate(300deg) translate(-50%, -50%);
@@ -866,11 +1083,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(6) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(6) .wheel-icon-inner {
@@ -891,11 +1108,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(5) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(5) .wheel-icon-inner {
@@ -916,11 +1133,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(4) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(4) .wheel-icon-inner {
@@ -941,11 +1158,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(3) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(3) .wheel-icon-inner {
@@ -966,11 +1183,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(2) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(2) .wheel-icon-inner {
@@ -991,11 +1208,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(1) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-6 .wheel-spoke:nth-child(1) .wheel-icon-inner {
@@ -1016,11 +1233,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(5) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(5) .wheel-icon-inner {
@@ -1041,11 +1258,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(4) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(4) .wheel-icon-inner {
@@ -1066,11 +1283,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(3) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(3) .wheel-icon-inner {
@@ -1091,11 +1308,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(2) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(2) .wheel-icon-inner {
@@ -1116,11 +1333,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(1) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-5 .wheel-spoke:nth-child(1) .wheel-icon-inner {
@@ -1141,11 +1358,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(4) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(4) .wheel-icon-inner {
@@ -1166,11 +1383,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(3) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(3) .wheel-icon-inner {
@@ -1191,11 +1408,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(2) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(2) .wheel-icon-inner {
@@ -1216,11 +1433,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(1) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-4 .wheel-spoke:nth-child(1) .wheel-icon-inner {
@@ -1241,11 +1458,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(3) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(3) .wheel-icon-inner {
@@ -1266,11 +1483,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(2) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(2) .wheel-icon-inner {
@@ -1291,11 +1508,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(1) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-3 .wheel-spoke:nth-child(1) .wheel-icon-inner {
@@ -1316,11 +1533,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(2) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(2) .wheel-icon-inner {
@@ -1341,11 +1558,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(1) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-2 .wheel-spoke:nth-child(1) .wheel-icon-inner {
@@ -1366,11 +1583,11 @@ h1 {
 }
 
 .wheel-wrapper .wheel.secondary.spokes-1 .wheel-spoke:nth-child(1) .wheel-icon {
-  -webkit-animation: icon-rotate 8s linear infinite;
-  -moz-animation: icon-rotate 8s linear infinite;
-  -o-animation: icon-rotate 8s linear infinite;
-  -ms-animation: icon-rotate 8s linear infinite;
-  animation: icon-rotate 8s linear infinite;
+    -webkit-animation: icon-rotate 16s linear infinite;
+  -moz-animation: icon-rotate 16s linear infinite;
+  -o-animation: icon-rotate 16s linear infinite;
+  -ms-animation: icon-rotate 16s linear infinite;
+  animation: icon-rotate 16s linear infinite;
 }
 
 .wheel-wrapper .wheel.secondary.spokes-1 .wheel-spoke:nth-child(1) .wheel-icon-inner {
