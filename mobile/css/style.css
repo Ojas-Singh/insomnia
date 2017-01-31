@@ -28,7 +28,7 @@ body {
   z-index: 10;
   top: 0;
   left: 0;
-  height: 70px;
+  height: 100px;
   width: 54px;
   cursor: pointer;
   background: url(http://iamturner.co.uk/codepen/menu-icon.png) no-repeat center;
@@ -73,7 +73,7 @@ h1 {
   font-size: 3rem;
   text-align: center;
   margin: 0;
-  line-height: 70px;
+  line-height: 100px;
   -webkit-user-select: none;
 }
 
