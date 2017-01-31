@@ -16,28 +16,11 @@
    <script src="js/index.js"></script>
 	
 <script type="text/javascript">
-if (screen.width < 1081) {
- var ref = document.referrer;
- var urls = new Array("http://www.insomniafest.xyz/Site","http://www.insomniafest.xyz/Site/mobile");
- var n = ref.match(urls[0]);
- var m = ref.match(urls[1]);
- if ((m!==null) || (n!==null)) {
- stop;
- }
- else if (ref=='') {
- var r = confirm("Small Display is Detected.\nClick \"OK\" for MOBILE SITE.");
- if (r==true) {
-  window.location = "http://www.insomniafest.xyz/Site/mobile";
-  }
-  else {
-  stop ;
- }
- }
- else
- {
- window.location = "http://www.insomniafest.xyz/Site/mobile";
- } 
+<!--
+if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+   location.replace("http://insomniafest.xyz/Site/mobile");
 }
+-->
 </script>
 
       <style>
