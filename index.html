@@ -16,11 +16,28 @@
    <script src="js/index.js"></script>
 	
 <script type="text/javascript">
-<!--
-if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/Android/i)) || (navigator.userAgent.match(/Mobile/i))) {
-   location.replace("http://insomniafest.xyz/Site/mobile");
+if (screen.width < 1081) {
+ var ref = document.referrer;
+ var urls = new Array("http://www.insomniafest.xyz/Site","http://www.insomniafest.xyz/Site/mobile");
+ var n = ref.match(urls[0]);
+ var m = ref.match(urls[1]);
+ if ((m!==null) || (n!==null)) {
+ stop;
+ }
+ else if (ref=='') {
+ var r = confirm("Small Display is Detected.\nClick \"OK\" for MOBILE SITE.");
+ if (r==true) {
+  window.location = "http://www.insomniafest.xyz/Site/mobile";
+  }
+  else {
+  stop ;
+ }
+ }
+ else
+ {
+ window.location = "http://www.insomniafest.xyz/Site/mobile";
+ } 
 }
--->
 </script>
 
       <style>
@@ -340,6 +357,12 @@ a {
   position: absolute;
   color: #fff;
 }
+	      .topright {
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    font-size: 18px;
+}
     </style>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -383,6 +406,7 @@ a {
            <iframe src="http://insomniafest.xyz/Site/events/" width="90%" height="100%" frameborder="0" scrolling="auto"></iframe>
           </div>
           <div class="page" id="p3">
+	    <a href="https://insider.in/insomnia-2017-feb24-2017/event"><img src="https://raw.githubusercontent.com/Ojas-Singh/insomnia/master/graphics/banner.png" alt="Buy Tickets" class="topright"></a>
             <iframe src="http://insomniafest.xyz/Site/pro%20nite/" width="90%" height="100%" frameborder="0" scrolling="no"></iframe>
           </div>
           <div class="page" id="p4">
