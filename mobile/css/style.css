@@ -64,7 +64,7 @@ section.four {
   -webkit-transition-delay: 0.15s;
 }
 section.five {
-  background: #696969;
+  background-image: url('https://raw.githubusercontent.com/Ojas-Singh/insomnia/master/graphics/mob.png');
   -webkit-transition-delay: 0.15s;
 }
 section.after {
@@ -93,6 +93,9 @@ h1 {
 .page-one section.four {
   -webkit-transition-delay: 0.05s;
 }
+.page-one section.five {
+  -webkit-transition-delay: 0.01s;
+}
 
 .page-two section.one {
   -webkit-transition-delay: 0s;
@@ -105,6 +108,9 @@ h1 {
 }
 .page-two section.four {
   -webkit-transition-delay: 0.05s;
+}
+.page-two section.five {
+  -webkit-transition-delay: 0.01s;
 }
 
 .menu-open section {
@@ -138,6 +144,13 @@ h1 {
 .menu-open section.four:active {
   background: #8152a4;
 }
+.menu-open section.five {
+  -webkit-transform: translateY(280px);
+  -webkit-transition-delay: 0.05s;
+}
+.menu-open section.five:active {
+  background: #8152a4;
+}
 .menu-open.page-one section.one {
   -webkit-transition-delay: 0s;
 }
@@ -148,6 +161,9 @@ h1 {
   -webkit-transition-delay: 0.1s;
 }
 .menu-open.page-one section.four {
+  -webkit-transition-delay: 0.15s;
+}
+.menu-open.page-one section.five {
   -webkit-transition-delay: 0.15s;
 }
 .menu-open.page-two section.one {
@@ -161,4 +177,7 @@ h1 {
 }
 .menu-open.page-two section.four {
   -webkit-transition-delay: 0.15s;
+}
+.menu-open.page-two section.five {
+  -webkit-transition-delay: 0.05s;
 }
