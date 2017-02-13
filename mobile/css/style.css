@@ -11,12 +11,12 @@ html {
 
 body {
   background: #696969;
-  height: 100%;
+  width: 100%;
 }
 
 .wrapper {
   width: 100%;
-  min-height:1920px;
+  min-height:720px;
   background: #2e394b;
   overflow: hidden;
   position: relative;
@@ -62,7 +62,7 @@ section.three {
 section.four {
   background-image: url('https://raw.githubusercontent.com/Ojas-Singh/insomnia/master/graphics/mob.png');
   background-repeat: no-repeat;
-  background-size: 100% ;
+  background-size: 100%;;
   -webkit-transition-delay: 0.15s;
 }
 section.after {
