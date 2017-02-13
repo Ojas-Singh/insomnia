@@ -161,3 +161,99 @@ h1 {
 .menu-open.page-two section.four {
   -webkit-transition-delay: 0.15s;
 }
+
+
+
+
+
+.accordion {
+           min-width:420px;
+           margin: 20px 20% 0px 35%;
+       }
+
+       .accordion-body {
+           position: relative;
+           display: none;
+           line-height: 50px;
+           background-color: #ddd;
+           width: 51.50%;
+       }
+
+       img {
+           width: 20px;
+           height: 20px;
+       }
+.ima  {
+           position: relative;
+           display: block;
+ margin-left:15px;
+
+       }
+
+       .ima a {
+           position: relative;
+           display: inline-block;
+           margin-left: 5px;
+       }
+
+       .accordion-head {
+           position: relative;
+           padding-left: 10px;
+           background-color: #404040;
+           color: white;
+           width: 50%;
+           line-height: 50px;
+           border-bottom: 1px solid white;
+       }
+
+       .accordion-body {
+           position: relative;
+           list-style: none;
+       }
+
+           .accordion-body a {
+               text-decoration: none;
+               color: black;
+           }
+
+       @media only screen and ( min-width:500px) and (max-width:1080px) {
+
+           .accordion-body {
+               display: none;
+               line-height: 50px;
+               background-color: #ddd;
+               width: 60%;
+           }
+
+           .accordion-head {
+               position: relative;
+               padding-left: 5px;
+               background-color: #404040;
+               color: white;
+               width: 59%;
+               line-height: 50px;
+               border-bottom: 1px solid white;
+           }
+
+           .accordion-body {
+               position: relative;
+               padding: 0;
+           }
+
+               .accordion-body a {
+                   font-size: 14px;
+                   position: relative;
+               }
+
+           img {
+               position: relative;
+               width: 15px;
+               height: 15px;
+           }
+
+           .ima a {
+               display: inline-block;
+               margin-left: 5px;
+               position: relative;
+           }
+       }

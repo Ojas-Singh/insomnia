@@ -16,3 +16,12 @@ function goToPage(page) {
   wrapper.classList.remove('menu-open','page-one','page-two');
   wrapper.classList.add('page-' + pages[page]);
 }
+
+
+
+
+$('.accordion').on('click', '.accordion-head', function () {
+     $(this).removeClass('close').addClass('close');
+$(this).next('.accordion-body').slideToggle().siblings('.accordion-body').slideUp();
+    });
+$('.accordion .accordion-body:first').show();
