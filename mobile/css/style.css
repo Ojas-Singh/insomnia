@@ -63,7 +63,7 @@ section.three {
 section.four {
   background-image: url('https://raw.githubusercontent.com/Ojas-Singh/insomnia/master/graphics/mob.png');
   background-repeat: no-repeat;
-  background-size: 100%;;
+  background-size: 100%;
   -webkit-transition-delay: 0.15s;
 }
 section.after {
