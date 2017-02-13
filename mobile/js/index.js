@@ -1,4 +1,4 @@
-var pages = new Array('one', 'two', 'three', 'four');
+var pages = new Array('one', 'two', 'three', 'four','five');
 
 function toggleMenu() {
  document.getElementsByClassName('wrapper')[0].classList.toggle('menu-open');

@@ -63,6 +63,10 @@ section.four {
   background: #794d9a;
   -webkit-transition-delay: 0.15s;
 }
+section.five {
+  background: #696969;
+  -webkit-transition-delay: 0.15s;
+}
 section.after {
   -webkit-transform: translateY(100%);
 }
