@@ -1,6 +1,12 @@
+h2{
+	color:#2f2f2f;
+	font-size:40px;
+	line-height:100px;
+	font-family: 'Roboto', sans-serif;
+}
 .at-section__title {
   margin: 0 0 70px;
-  color: #000;
+  color: #006;
   font-family: 'Roboto', sans-serif;
   font-size: 3.5rem;
   font-weight: 300;
@@ -17,9 +23,9 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #88F;
-  border: 1px solid #E2E9ED;
+  background: none;
 }
+
 .at-grid[data-column="1"] .at-column {
   width: 100%;
   max-width: 100%;
@@ -204,7 +210,7 @@ body {
 .container {
   max-width: 1170px;
   width: 100%;
-  margin: 100px auto;
+  margin: 00px auto;
   padding: 0 20px;
   box-sizing: border-box;
   -webkit-transform-origin: top center;
