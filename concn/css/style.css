@@ -1,0 +1,387 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.photo-grid {
+  width: 100%;
+}
+
+.photo-grid-photo {
+  width: 33.333%;
+  float: left;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.photo-grid-photo .hidden-bio {
+  display: none;
+}
+.photo-grid-photo a {
+  color: #99ccee;
+  text-decoration: none;
+}
+.photo-grid-photo img {
+  max-width: calc(100% + 20px);
+  width: calc(100% + 20px);
+  height: auto;
+  vertical-align: middle;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.photo-grid-photo .photo-grid-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  width: 100%;
+  -moz-transform: translate3d(0, 65px, 0);
+  -webkit-transform: translate3d(0, 65px, 0);
+  transform: translate3d(0, 65px, 0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* FF3.6+ */
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
+  /* IE6-9 */
+}
+.photo-grid-photo .photo-grid-name {
+  font-size: 44px;
+  font-weight: 100;
+}
+.photo-grid-photo .border {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 8px 0;
+  float: left;
+}
+.photo-grid-photo .photo-grid-title, .photo-grid-photo .photo-grid-twitter-handle {
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -moz-transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  font-size: 22px;
+}
+.photo-grid-photo .photo-grid-title {
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.photo-grid-photo .photo-grid-twitter-handle {
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  line-height: 22px;
+}
+.photo-grid-photo .photo-grid-twitter-handle::before {
+  content: '';
+  display: inline-block;
+  background: url(http://www.domo.com/assets/images/icon/twitter-bird.png);
+  width: 20px;
+  height: 18px;
+  margin-bottom: -4px;
+  margin-right: 3px;
+  background-size: cover;
+}
+.photo-grid-photo .photo-grid-bio {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  -moz-transform: scale(3, 3);
+  -ms-transform: scale(3, 3);
+  -webkit-transform: scale(3, 3);
+  transform: scale(3, 3);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  font-size: 16px;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  /* FF3.6+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
+  /* IE6-9 */
+  background: rgba(153, 204, 238, 0.5);
+  background: rgba(97, 130, 152, 0.7);
+}
+.photo-grid-photo .photo-grid-twitter-handle {
+  font-size: 16px;
+}
+.photo-grid-photo:hover .photo-grid-info {
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.photo-grid-photo:hover .photo-grid-title, .photo-grid-photo:hover .photo-grid-twitter-handle {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.photo-grid-photo:hover .photo-grid-twitter-handle {
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.photo-grid-photo:hover .photo-grid-title {
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.photo-grid-photo:hover .border {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.photo-grid-photo:hover img {
+  transform: translate3d(-18px, 0, 0);
+}
+.photo-grid-photo:hover .border {
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.photo-grid-photo.active .photo-grid-bio {
+  -moz-transform: perspective(0) translate(0, 0);
+  -ms-transform: perspective(0) translate(0, 0);
+  -webkit-transform: perspective(0) translate(0, 0);
+  transform: perspective(0) translate(0, 0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.photo-grid-photo.active .photo-grid-title, .photo-grid-photo.active .photo-grid-twitter-handle {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.photo-grid-photo.active .photo-grid-info {
+  -moz-transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+.photo-grid-photo.active img {
+  transform: translate3d(-18px, 0, 0) scale(1.1);
+}
+
+.expanded-bio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(97, 130, 152, 0.9);
+  color: #fff;
+  padding: 30px;
+  width: 33.333%;
+  -moz-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+  overflow: hidden;
+}
+.expanded-bio .read-more {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+.expanded-bio.come-out {
+  top: 200px !important;
+  left: 50% !important;
+  width: 800px;
+  margin-left: -400px;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.expanded-bio a {
+  color: #99ccee;
+  text-decoration: none;
+}
+.expanded-bio img {
+  max-width: calc(100% + 20px);
+  width: calc(100% + 20px);
+  height: auto;
+  vertical-align: middle;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.expanded-bio .photo-grid-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  width: 100%;
+  -moz-transform: translate3d(0, 65px, 0);
+  -webkit-transform: translate3d(0, 65px, 0);
+  transform: translate3d(0, 65px, 0);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* FF3.6+ */
+  background: -o-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
+  /* IE6-9 */
+}
+.expanded-bio .photo-grid-name {
+  font-size: 44px;
+  font-weight: 100;
+}
+.expanded-bio .border {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 8px 0;
+  float: left;
+}
+.expanded-bio .photo-grid-title, .expanded-bio .photo-grid-twitter-handle {
+  font-size: 22px;
+}
+.expanded-bio .photo-grid-title {
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.expanded-bio .photo-grid-twitter-handle {
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  line-height: 22px;
+}
+.expanded-bio .photo-grid-twitter-handle::before {
+  content: '';
+  display: inline-block;
+  background: url(http://www.domo.com/assets/images/icon/twitter-bird.png);
+  width: 20px;
+  height: 18px;
+  margin-bottom: -4px;
+  margin-right: 3px;
+  background-size: cover;
+}
+.expanded-bio .photo-grid-bio {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  -moz-transform: scale(3, 3);
+  -ms-transform: scale(3, 3);
+  -webkit-transform: scale(3, 3);
+  transform: scale(3, 3);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  font-size: 16px;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  /* FF3.6+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 );
+  /* IE6-9 */
+  background: rgba(153, 204, 238, 0.5);
+  background: rgba(97, 130, 152, 0.7);
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.expanded-bio .photo-grid-twitter-handle {
+  font-size: 16px;
+}
