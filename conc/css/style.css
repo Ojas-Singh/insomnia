@@ -210,7 +210,7 @@ body {
 .container {
   max-width: 1170px;
   width: 100%;
-  margin: 00px auto;
+  margin: 100px auto;
   padding: 0 20px;
   box-sizing: border-box;
   -webkit-transform-origin: top center;
